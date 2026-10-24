@@ -1,0 +1,15 @@
+{
+  "name": "remaster",
+  "owner": { "name": "afaqxdev", "url": "https://github.com/afaqxdev" },
+  "metadata": { "description": "Remaster — app redesign to premium Flutter, via Figma, with approval gates." },
+  "plugins": [
+    {
+      "name": "remaster",
+      "source": "./",
+      "description": "Research any app, design an original modern redesign in Figma (light + dark, every state, app icon, motion timelines), then build and audit it in Flutter after your approval.",
+      "version": "1.0.0",
+      "category": "design",
+      "keywords": ["flutter", "figma", "redesign", "motion"]
+    }
+  ]
+}

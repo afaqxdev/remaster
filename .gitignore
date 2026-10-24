@@ -1,0 +1,4 @@
+.DS_Store
+redesign/
+*.pyc
+__pycache__/

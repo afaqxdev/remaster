@@ -1,0 +1,10 @@
+{
+  "name": "remaster",
+  "version": "1.0.0",
+  "description": "Turn any app into a premium Flutter app — researched, designed in Figma (light + dark, every state, app icon, Figma Motion timelines), approved by you at two gates, then built and audited.",
+  "author": { "name": "afaqxdev", "url": "https://github.com/afaqxdev" },
+  "homepage": "https://github.com/afaqxdev/remaster",
+  "repository": "https://github.com/afaqxdev/remaster",
+  "license": "MIT",
+  "keywords": ["flutter", "figma", "redesign", "ui-ux", "design-system", "motion", "agent-skills", "claude-code"]
+}
