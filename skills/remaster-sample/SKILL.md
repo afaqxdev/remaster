@@ -10,5 +10,5 @@ Run **Phases 3–4 and Gate 1** of the `remaster` workflow.
 1. Read `redesign/<app-slug>/status.md` and `app-dossier.md`. If the dossier is missing, run `/remaster-research` first.
 2. Read the `remaster` skill's `SKILL.md`, `references/design.md` and `references/visual-quality.md`.
 3. Load only the Phase 3–4 skills from the skills-per-phase table.
-4. Build Foundations + 4–5 screens in Figma, **each in light and dark**, with the self-review loop.
+4. Build and validate the UI Kit (`references/ui-kit.md`), then 4–5 screens in Figma built only from it, **each in light and dark**, with the self-review loop.
 5. Present the Figma link and screenshots and ask for Gate 1 approval. **No code.** Update `status.md`.

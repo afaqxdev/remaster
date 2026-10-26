@@ -11,6 +11,7 @@ Walk `app-dossier.md` line by line against the deliverables. Don't declare done 
 - [ ] Splash, onboarding, home and primary navigation designed and animated
 - [ ] Loading / empty / error / success / disabled states covered where applicable
 - [ ] All screens and components use tokens only
+- [ ] UI Kit complete and validated; every screen built only from it; per-screen check shows changes beyond colour (layout, components, type, spacing, navigation, icons)
 - [ ] Every transition follows `motion-system.md`; reduced-motion alternatives exist
 - [ ] Accessibility: contrast, semantics, text scaling, touch targets, focus order
 - [ ] Responsive: small/large phones, safe areas, keyboard, tablet/landscape if supported

@@ -60,6 +60,8 @@ Do not default to: dashboard templates; maximum radius on everything; grids of i
 
 ## Phase 4 — Figma prototype (4–5 screens only)
 
+**First build and validate the UI Kit (`ui-kit.md`)** — kit board with every component and state in light and dark — then compose the screens only from it.
+
 ### Pick screens from the dossier
 Typical: splash, onboarding (or auth), **home with primary navigation**, the core feature, one secondary (detail / profile / library / settings). Replace any that don't apply; don't pad to five.
 

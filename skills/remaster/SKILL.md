@@ -21,6 +21,7 @@ Turn any existing app into a modern, premium Flutter app. Act as a **product des
 8. **Attractive, proper color.** A confident brand hue, deliberate accent, semantic colors tuned to the palette, measured contrast, designed light and dark themes — see the color composition check in `references/design.md`.
 9. **Premium quality bar, including graphics.** Modern graphics, custom icons, a distinctive app icon and purposeful motion are **required deliverables**, not extras. Follow `references/visual-quality.md` and answer its 5-question professional review for every screen.
 10. **No unnecessary rewrites.** In an existing Flutter project, preserve working business logic, dependencies, architecture and configuration unless a change is justified and approved. Read the project's own rules (CLAUDE.md, README, lint config, conventions) before changing anything.
+11. **UI Kit first, never a reskin.** Before any screen is designed or coded, build and validate a complete original UI Kit (tokens, components with all states, icons, motion, light/dark, responsive rules) per `references/ui-kit.md`, apply it to every screen, and prove each screen changed beyond colours.
 
 ## Step 0 — Project discovery (ask before doing anything)
 
@@ -59,7 +60,7 @@ Read each reference file when you reach its phase — not before.
 |---|---|---|
 | 1–2. Research & app dossier (store, reviews, competitors, flows; binary if supplied) | [references/research.md](references/research.md) | `app-dossier.md` — feature inventory, user journeys, pain points, competitor notes, do-not-copy list |
 | 3. Visual direction & design skills | [references/design.md](references/design.md), [references/visual-quality.md](references/visual-quality.md) | `design-direction.md` — colors, type, spacing, shapes, icon style, illustration style, motion principles, light/dark |
-| 4. **Figma prototype** (4–5 screens, each in light + dark, no code) | [references/design.md](references/design.md) | Figma Foundations + prototype screens, `sample-design.md`, draft `build-prompt.md` |
+| 4. **UI Kit, then Figma prototype** (validated kit board, then 4–5 screens in light + dark, no code) | [references/design.md](references/design.md) | Figma Foundations + prototype screens, `sample-design.md`, draft `build-prompt.md` |
 | **GATE 1** | — | User approves style, colors, type, layout, navigation, graphics, motion direction |
 | 5. Complete Figma design (every screen & state, responsive, dark mode, a11y) | [references/design.md](references/design.md) | `design-system.md`, `screen-specifications.md`, `ux-flows.md` |
 | 6. Graphics & app icon (3 icon concepts → final + exports; custom icons, illustrations, splash & onboarding visuals) | [references/visual-quality.md](references/visual-quality.md) | Figma *App icon* and *Graphics* pages, export-ready assets |
