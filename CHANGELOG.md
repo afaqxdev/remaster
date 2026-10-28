@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.1.0
-- New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — 3 concepts, 6-frame story, caption & policy rules, exact sizes, flattened exports.
+- New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — three styles (Device-Hero, Lifestyle, Feature-Grid), copy-length rules, brief questions, 6-frame story, caption & policy rules, exact sizes, flattened exports.
 - UI Kit-first rule: complete validated kit before any screen; no reskins.
 
 ## 1.0.0 — first public release

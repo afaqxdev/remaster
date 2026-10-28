@@ -1,59 +1,85 @@
 # Store assets — screenshots & feature graphic (`/remaster-store-assets`)
 
-Store screenshots are an ad, not a gallery. A visitor decides in about three seconds from the first two frames. Design them as a **short story built from the approved UI Kit**, not raw captures with text on top.
+Store screenshots are an ad, not a gallery. A visitor decides in about three seconds from the first two frames. Design them as a **short story built from the approved UI Kit and real redesigned screens** — never features, results or reviews the app doesn't have.
 
-Prerequisite: the approved Figma design (Gate 1 at minimum; ideally Phase 5–7 done) so every frame shows the real redesigned UI. Never show screens, features or results the app doesn't have.
+Prerequisite: the approved Figma design (Gate 1 at minimum; ideally Phases 5–7 done).
 
-## 1. Specs (verified Oct 2026 from multiple guides — re-check Play Console / App Store Connect before upload)
+## 1. Brief (ask in one message before designing)
+- Stores and devices (Play phone/tablet, iPhone, iPad), number of screenshots (default 6), locales.
+- Target audience in one line (who, context, what they want).
+- Preferred style (offer the three below with the recommendation for this app's category) and tone.
+- Brand constraints: logo placement, mandatory tagline/keywords, photos vs. graphics allowed.
+- Promo video planned? (affects the feature graphic).
+Don't ask what `app-dossier.md`, `design-direction.md` or the UI Kit already answers.
+
+## 2. Pick one of three styles (render frames 1–2 in the recommended style + one alternative, user chooses)
+
+### Style 1 · Device-Hero (UI-centric)
+- **Layout:** one large portrait device or frameless screen fills most of the frame (often bleeding off the bottom); short headline in the clear top area. The UI carries the message.
+- **Type:** the kit's display font for the headline, UI font for the subhead; headline over empty background, never over UI.
+- **Colour & imagery:** brand background or soft gradient from kit tokens; no stock photos; accents only from the UI.
+- **Extras:** at most one floating element (a zoomed UI fragment or a chip) — no fake ratings or badges.
+- **Best for:** apps with a distinctive UI — creative, social, games, productivity with a strong look.
+- **Pros / cons:** fastest, most honest, modern · can feel flat if the UI isn't striking.
+
+### Style 2 · Lifestyle / Contextual
+- **Layout:** the device in a scene — hand-held, on a desk, in the moment of use — tilted or partly out of frame; headline in the photo's calm area, on a brand-coloured scrim if needed for contrast. Keep the UI clearly readable (it should still be the largest single element).
+- **Type & colour:** bold, high-contrast headline; brand gradient overlay to unify photo colours with the kit.
+- **Imagery:** relatable people/environments for the target user. Use **only licensed or original** photos or renders (record source/license); AI-generated people must not imply real customers. No other brands' hardware renders without rights.
+- **Best for:** fitness, wellness, travel, food, dating, family apps.
+- **Pros / cons:** emotional, aspirational · needs photography/licensing, can hide UI detail, slower to make.
+
+### Style 3 · Feature-Grid / Iconic
+- **Layout:** no device; 2×2 or 3×2 rounded cards (kit radii/shadows), each with a custom icon or mini UI snippet and a 1–3 word label; headline above. Use for 1–2 frames inside a set, not the whole set.
+- **Type & colour:** strong bold headline; flat card fills from kit tokens; icons from the kit's icon family (same stroke, radius).
+- **Best for:** utility, finance, productivity, security, B2B apps with many benefits.
+- **Pros / cons:** many benefits at a glance · cluttered or "salesy" if overused; less product feel.
+
+| Style | Ideal for | Effort (6-frame set) |
+|---|---|---|
+| Device-Hero | distinctive UI, games, social, creative | fast |
+| Lifestyle | wellness, fitness, travel, food, dating | slow (photos + licensing) |
+| Feature-Grid | utility, finance, productivity, B2B | medium |
+Mixing is fine: e.g. Device-Hero frames 1–4 + one Feature-Grid frame for "everything else" — but one palette, one type system, one motif across the set.
+
+## 3. Storyboard (6 frames for phones; adapt)
+1. **Value proposition / core job** — what the user gets, shown on the hero screen (never login or onboarding).
+2. **Core action** — the main task mid-action.
+3. **Differentiator** — what competitors lack (from `app-dossier.md`).
+4. **Progress / reward** — results, stats, streaks.
+5. **Personal / social / daily** — sharing, daily content, personalization.
+6. **Trust & polish** — dark mode, offline, privacy, accessibility; or a Feature-Grid summary.
+
+## 4. Copy
+| Element | Length | Rule |
+|---|---|---|
+| Headline | 3–6 words (≤ 7 for Lifestyle) | benefit-first, verb-led, enhances the visual instead of describing it |
+| Subhead (optional) | 8–12 words | one sentence |
+| Grid labels | 1–3 words | nouns or short verb phrases |
+| Closing line (optional, last frame) | 1–3 words | benefit CTA ("Start your streak") — avoid store-action CTAs like "Download now"/"Install" and "free" claims |
+- Headline ≥ 6% of frame height; contrast ≥ 4.5:1; readable when the frame is ~200 px wide.
+- Never: rankings, "#1"/"best", prices or discounts, award claims, star ratings or review quotes, other apps' names/marks.
+- Per-locale text layers, ~30% room for longer languages, mirrored layout for RTL.
+
+## 5. Specs (re-check Play Console / App Store Connect before upload)
 | Store | Asset | Size | Rules |
 |---|---|---|---|
-| Google Play | Phone screenshots | 1080 × 1920 (9:16) recommended; 2–8 per device type | JPEG or 24-bit PNG, **no alpha**; longest side ≤ 2× shortest |
-| Google Play | 7"/10" tablet (if supported) | 1920 × 1200 / 1200 × 1920 | same |
-| Google Play | **Feature graphic** (required) | **1024 × 500** | JPEG or 24-bit PNG, no alpha; also the cover of the promo video |
-| App Store | iPhone 6.9" (main set) | 1320 × 2868 (or 1290 × 2796) | PNG/JPEG flat, no transparency; up to 10; smaller sizes scale from it |
-| App Store | iPad 13" (if the app runs on iPad) | 2064 × 2752 (or 2048 × 2732) | required when iPad is supported |
-Build each size as its own Figma frame — never stretch one export to another ratio.
-
-## 2. Pick a visual concept (show the user 3, they choose)
-Render frame 1 + 2 in each concept, light theme, then ask which to develop:
-- **A · Hero caption** — big 2–5-word headline on top, one device (or frameless UI) below, bleeding off the bottom edge; brand background from the kit. Clean, safest for conversion.
-- **B · Panorama** — one continuous background/illustration flowing across all frames so the row reads as one image while scrolling; devices tilted ±4–8°; motif shapes from the brand cross frame edges.
-- **C · Spotlight** — a zoomed crop of one UI element (the key interaction) floating large, with a smaller full screen behind and 1–2 callout labels; best for showing a unique feature.
-All three use the kit's colours, fonts, radii, shadows and motif — screenshots must look like the same brand as the app icon and splash.
-
-## 3. Storyboard (6 frames for phones; adapt to the app)
-1. **Value proposition** — the single strongest reason to install + the hero screen. No feature lists.
-2. **Core action** — the main thing users do, mid-action (e.g., a reveal or a completed task).
-3. **Differentiator** — what competitors lack (from `app-dossier.md` → missing features / pain points fixed).
-4. **Progress / reward** — stats, streaks, results, the "feel good" moment.
-5. **Personal / social / daily** — daily content, sharing, friends, personalization.
-6. **Trust & polish** — dark mode, accessibility, offline, privacy — or a strong closing line.
-Order frames 1–3 for people who never swipe further.
-
-## 4. Caption rules
-- Headline **2–5 words**, benefit-first, verb-led ("Guess smarter every day"), set in the kit's display font, ≥ 6% of frame height; optional one-line subhead.
-- One idea per frame; ≤ 2 lines; never cover essential UI.
-- Contrast ≥ 4.5:1 against its background; readable at thumbnail size (check at 25% zoom).
-- No rankings, "#1", "best", prices, discounts, "free"/"download now" calls to action, award claims, or other apps' names/marks — store policies reject or penalise these.
-- Write captions in a separate text layer per locale; keep room for ~30% longer languages; mirror layout for RTL.
-
-## 5. Device & UI presentation
-- Use the **real Figma screens** at full fidelity with realistic, honest content (no lorem ipsum, no fake reviews or numbers presented as real users).
-- Device frame optional: a simple, current, generic frame or frameless rounded screen with the kit's shadow — never another manufacturer's trademarked hardware render you don't have rights to.
-- Hide/clean the status bar (full battery, neutral time like 9:41).
-- Provide **light and dark** sets when the app supports both; choose the stronger one as the default listing.
+| Google Play | Phone screenshots | 1080 × 1920 portrait (9:16) recommended; landscape 1920 × 1080 allowed | 2–8 per device type; each side 320–3840 px; longest side ≤ 2× shortest; JPEG or 24-bit PNG, **no alpha** |
+| Google Play | Tablet (if supported) | 1920 × 1200 / 1200 × 1920 | same rules |
+| Google Play | **Feature graphic** (required) | **1024 × 500** | JPEG / 24-bit PNG, no alpha |
+| App Store | iPhone 6.9" (main set) | 1320 × 2868 (1290 × 2796 also accepted) | up to 10; flat PNG/JPEG, no transparency; smaller iPhones scale from it |
+| App Store | iPad 13" (if the app runs on iPad) | 2064 × 2752 (2048 × 2732 also accepted) | required when iPad is supported |
+- Keep text and key UI inside the centre ~80% of each frame.
+- Portrait first; add landscape only when the content is wide (games, maps, video) — keep one orientation per set where possible.
+- Build every size as its own frame; never stretch an export to another ratio.
 
 ## 6. Feature graphic (1024 × 500)
-- Brand-led, not a screenshot collage: app mark + a 2–5-word tagline + one hero UI fragment or illustration from the kit.
-- Keep text and the logo inside the central ~80% (cropping and the video play button can cover edges/centre — keep the exact centre clear of text if a promo video is attached).
-- Bold, simple, readable at 50% size; same palette and motif as the icon and screenshots.
+Brand-led, not a screenshot collage: app mark + 2–5-word tagline + one hero UI fragment or illustration from the kit. Text and logo inside the centre ~80%; keep the exact centre clear when a promo video is attached (play button). Readable at 50% size; same palette and motif as the icon and screenshots.
 
-## 7. Build in Figma
-- New page **"Store assets"**: one frame per size and locale, named `play/phone/01-value` … `appstore/iphone69/01-value`, `play/feature-graphic`.
-- Captions as text styles from the kit; backgrounds and motif as components so changes propagate to every frame.
-- Self-review with screenshots: thumbnail test (25%), contrast, policy list above, story order, consistency with icon/splash.
+## 7. Workflow
+Brief → pick style (2 frames × 2 styles) → full storyboard → self-review → user review → export all sizes and locales.
+- Figma page **"Store assets"**: frames named `play/phone/01-value`, `appstore/iphone69/01-value`, `play/feature-graphic`; captions as kit text styles; backgrounds/motif as components.
+- Self-review each frame: thumbnail test (~200 px wide), contrast, copy lengths, policy list, story order, consistency with icon and splash, safe area.
 
 ## 8. Export & hand-off
-- Export each frame at exact pixel size, flattened (**no alpha**) as PNG or JPEG; put them in `redesign/<app-slug>/store-assets/{play,appstore}/<locale>/`.
-- Write `store-assets.md`: frame order, caption text per locale, which concept was chosen, specs used, and anything the user must still check in the console.
-- Suggest A/B testing variants (Play Store listing experiments, App Store product page optimization) instead of guessing.
+Export at exact pixel sizes, flattened (**no alpha**), PNG or JPEG, to `redesign/<app-slug>/store-assets/{play,appstore}/<locale>/`. Write `store-assets.md` (chosen style, frame order, captions per locale, asset sources/licenses, specs used, items to re-check in the console) and suggest A/B tests (Play store listing experiments, App Store product page optimization).

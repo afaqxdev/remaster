@@ -72,7 +72,7 @@ It takes the *idea* from the original app, never its design.
 | `/remaster-motion` | Key moments as Figma Motion timelines → `motion-system.md` |
 | `/remaster-build` | Flutter build 9a → 9d (only after Gate 2) |
 | `/remaster-audit` | Scripted visual + technical audit |
-| `/remaster-store-assets` | Google Play & App Store screenshots + feature graphic: 3 concepts, a 6-frame story, exact sizes |
+| `/remaster-store-assets` | Google Play & App Store screenshots + feature graphic: Device-Hero, Lifestyle or Feature-Grid style, a 6-frame story, exact sizes |
 | `/remaster-status` | Where your project stands and the next command |
 | `/remaster-help` | Quick reference |
 

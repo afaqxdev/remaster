@@ -15,7 +15,7 @@ Print this reference and stop:
 | `/remaster-motion` | Key moments as Figma Motion timelines → `motion-system.md` |
 | `/remaster-build` | Flutter build 9a–9d (after Gate 2) |
 | `/remaster-audit` | Scripted visual + technical audit |
-| `/remaster-store-assets` | Play/App Store screenshots + feature graphic (3 concepts → story → exports) |
+| `/remaster-store-assets` | Play/App Store screenshots + feature graphic (Device-Hero / Lifestyle / Feature-Grid → 6-frame story → exports) |
 | `/remaster-status` | Where the project stands + next command |
 
 Phases: 0 discovery → 1–2 research → 3 direction → 4 prototype → **Gate 1** → 5 full design → 6 icon & graphics → 7 motion → 8 dev spec → **Gate 2** → 9 Flutter → 10 audit.
