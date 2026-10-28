@@ -10,7 +10,7 @@
 *Researched. Designed in Figma. Approved by you. Then built and audited.*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-0E7C74?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-0E7C74?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.1.0-0E7C74?style=flat-square)](CHANGELOG.md)
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-0D2422?style=flat-square)](#install)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-0D2422?style=flat-square)](AGENTS.md)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-2F8F4E?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -72,6 +72,7 @@ It takes the *idea* from the original app, never its design.
 | `/remaster-motion` | Key moments as Figma Motion timelines → `motion-system.md` |
 | `/remaster-build` | Flutter build 9a → 9d (only after Gate 2) |
 | `/remaster-audit` | Scripted visual + technical audit |
+| `/remaster-store-assets` | Google Play & App Store screenshots + feature graphic: 3 concepts, a 6-frame story, exact sizes |
 | `/remaster-status` | Where your project stands and the next command |
 | `/remaster-help` | Quick reference |
 
@@ -148,7 +149,7 @@ Remaster routes to existing specialist skills instead of re-implementing them, a
 ```
 .claude-plugin/        plugin + marketplace manifests
 skills/remaster/       the orchestrator skill + references/ (phase guides)
-skills/remaster-*/     command skills (research, sample, motion, build, audit, status, help)
+skills/remaster-*/     command skills (research, sample, motion, store-assets, build, audit, status, help)
 assets/                logo, hero and workflow artwork
 evals/                 test prompts with expected behaviour
 scripts/validate.py    structure + frontmatter + link checks (run in CI)

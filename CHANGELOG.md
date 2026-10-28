@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+- New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — 3 concepts, 6-frame story, caption & policy rules, exact sizes, flattened exports.
+- UI Kit-first rule: complete validated kit before any screen; no reskins.
+
 ## 1.0.0 — first public release
 - Orchestrator skill `remaster` with 10 phases and two approval gates.
 - Commands: `/remaster-research`, `/remaster-sample`, `/remaster-motion`, `/remaster-build`, `/remaster-audit`, `/remaster-status`, `/remaster-help`.
