@@ -90,6 +90,8 @@ Or just ask: *"Remaster the app at https://play.google.com/store/apps/details?id
 /plugin install remaster@remaster
 ```
 
+**Get updates automatically:** `/plugin` → **Marketplaces** → **remaster** → **Enable auto-update**. Third-party marketplaces don't auto-update by default; without it, update with `claude plugin update remaster@remaster`.
+
 **Claude Code (manual)**
 
 ```bash
