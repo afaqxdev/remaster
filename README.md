@@ -52,7 +52,7 @@ It takes the *idea* from the original app, never its design.
 | **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets | `status.md` |
 | **1–2 · Research** | Store listing, review themes, 2–4 competitors, missing features | `app-dossier.md` + do-not-copy list |
 | **3 · Direction** | Brand colour, palette check, type, shapes, icon & illustration style | `design-direction.md` |
-| **4 · Prototype** | 4–5 screens in Figma, light **and** dark, self-reviewed | Figma file |
+| **4 · Prototype** | 3 app-specific theme concepts → your pick → UI Kit → a small representative screen set in light **and** dark | Figma file |
 | **⛔ Gate 1** | You approve style, colours, type, layout, navigation, motion | — |
 | **5 · Full design** | Every screen and state (loading, empty, error, offline…), responsive, accessible | `design-system.md`, `screen-specifications.md`, `ux-flows.md`, `design-tokens.json` |
 | **6 · Icon & graphics** | 3 app-icon concepts → final + Android/iOS exports, custom icons, illustrations | Figma *App icon* & *Graphics* pages |
@@ -68,11 +68,11 @@ It takes the *idea* from the original app, never its design.
 |---|---|
 | `/remaster` | The whole workflow, with both approval gates |
 | `/remaster-research` | Discovery + research → `app-dossier.md` |
-| `/remaster-sample` | Direction + 4–5 screen Figma prototype (light & dark) → Gate 1 |
+| `/remaster-sample` | 3 theme concepts → UI Kit → representative Figma screens (light & dark) → Gate 1 |
 | `/remaster-motion` | Key moments as Figma Motion timelines → `motion-system.md` |
 | `/remaster-build` | Flutter build 9a → 9d (only after Gate 2) |
 | `/remaster-audit` | Scripted visual + technical audit |
-| `/remaster-store-assets` | Google Play & App Store screenshots + feature graphic: Device-Hero, Lifestyle or Feature-Grid style, a 6-frame story, exact sizes |
+| `/remaster-store-assets` | Google Play & App Store screenshots + feature graphic: a story and style derived from the app, exact store sizes |
 | `/remaster-status` | Where your project stands and the next command |
 | `/remaster-help` | Quick reference |
 

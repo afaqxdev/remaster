@@ -61,7 +61,7 @@ Read each reference file when you reach its phase — not before.
 |---|---|---|
 | 1–2. Research & app dossier (store, reviews, competitors, flows; binary if supplied) | [references/research.md](references/research.md) | `app-dossier.md` — feature inventory, user journeys, pain points, competitor notes, do-not-copy list |
 | 3. Visual direction & design skills | [references/design.md](references/design.md), [references/visual-quality.md](references/visual-quality.md) | `design-direction.md` — colors, type, spacing, shapes, icon style, illustration style, motion principles, light/dark |
-| 4. **UI Kit, then Figma prototype** (validated kit board, then 4–5 screens in light + dark, no code) | [references/design.md](references/design.md) | Figma Foundations + prototype screens, `sample-design.md`, draft `build-prompt.md` |
+| 4. **UI Kit, then Figma prototype** (3 theme concepts → user pick → validated kit board → smallest representative screen set in light + dark, no code) | [references/design.md](references/design.md) | Figma Foundations + prototype screens, `sample-design.md`, draft `build-prompt.md` |
 | **GATE 1** | — | User approves style, colors, type, layout, navigation, graphics, motion direction |
 | 5. Complete Figma design (every screen & state, responsive, dark mode, a11y) | [references/design.md](references/design.md) | `design-system.md`, `screen-specifications.md`, `ux-flows.md` |
 | 6. Graphics & app icon (3 icon concepts → final + exports; custom icons, illustrations, splash & onboarding visuals) | [references/visual-quality.md](references/visual-quality.md) | Figma *App icon* and *Graphics* pages, export-ready assets |

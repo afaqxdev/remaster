@@ -6,12 +6,15 @@ Motion must explain navigation, give feedback, preserve continuity and express t
 Read `motion-research.md` first. Every moment that rewards or informs the user — the core success action (e.g., a correct guess), task/level complete, errors/invalid input, splash, onboarding — gets a **designed, playable animation in Figma**, not just a note.
 - **Primary: Figma Motion timeline** (load the Figma `figma-use-motion` skill). One top-level frame per moment whose *resting state is the final state*; keyframe tracks on its children (transform, opacity, size, colour, blur/glow, path trim), `CUSTOM_SPRING` easing with explicit bounce, `setTimelineDuration`. Hide mid-animation-only layers at rest (opacity 0).
 - **Fallback (Motion not enabled):** Smart Animate keyframe frames — one frame per keyframe, identical layer names, `AFTER_TIMEOUT` reactions with spring easing, flow starting point.
-- Use the **modern motion vocabulary** in `motion-research.md` (springs, staggered waves, card flips, depth, circular reveal, shared-element flight, light sweep, rolling counters, rings, confetti, island morph, haptics).
+- Pick techniques for *this* moment from the motion vocabulary in `motion-research.md` — it's a menu of options, not a checklist; use only what the moment needs.
 - Write a timing note under each moment (offset, duration, easing/bounce, haptic) and the reduced-motion alternative.
-- **Verify** with `get_motion_context` (keyframes + spring curves) and, when ffmpeg is available, `export_video` frame samples; the moment must finish fast (≤ ~1.5 s before the user can act).
+- **Verify** with `get_motion_context` (keyframes + spring curves) and, when ffmpeg is available, `export_video` frame samples; the user must be able to act again quickly — length set by the moment's purpose (a rare celebration can be longer than routine feedback), never padded to feel special.
 These timelines are the source of truth for Phase 9d (`get_motion_context` → Flutter via the mapping table) and the Phase 10 visual check.
 
-## Tokens (adapt values to the direction)
+## Tokens — derived per app
+First define the app's **motion character** in one line (e.g., calm and precise · brisk and utilitarian · playful and bouncy), from its personality, audience, platform conventions, accessibility needs and performance budget. Then set timing and easing **per interaction type** — feedback, navigation, content change, onboarding, expressive/celebration — and record a one-line reason for each in `motion-system.md`. Don't make motion slower, faster or more elaborate just to look distinctive.
+
+**Fallback starting points** (use only when there's no better evidence; mark as assumptions and revise):
 
 | Token | Duration | Curve (Flutter) | Use |
 |---|---|---|---|
@@ -20,10 +23,10 @@ These timelines are the source of truth for Phase 9d (`get_motion_context` → F
 | `standard` | 300ms | `Easing.emphasizedDecelerate` | route transitions, sheets |
 | `emphasized` | 450ms | `Easing.emphasizedDecelerate` / spring | hero, container transform, splash |
 
-Exits ~20–30% shorter than entrances. Nothing a user waits on regularly exceeds ~400ms. Define all of these once in `theme/tokens.dart` (`AppMotion`).
+Common guidance worth checking against the app: exits a little shorter than entrances; things users wait on often stay short. Define the chosen tokens once in `theme/tokens.dart` (`AppMotion`).
 
 ## Splash
-Native splash (`flutter_native_splash` or platform launch screen) shows the brand instantly; the Flutter splash continues it seamlessly: logo fade + subtle scale (0.92→1), staggered wordmark, optional slow background movement, then transition into onboarding/home. Total ≲ 1s after first frame, and it ends as soon as init is done — never used to hide slow startup.
+Native splash (`flutter_native_splash` or platform launch screen) shows the brand instantly; the Flutter splash continues it seamlessly: a brand reveal suited to the app's motion character (e.g., fade + subtle scale, a mark assembling, a reveal of the key visual), then a transition into onboarding/home. Keep it brief and end it as soon as init is done — never used to hide slow startup.
 
 ## Onboarding
 Use animated illustrations that demonstrate the features (see `visual-quality.md` → splash/onboarding motion; Rive or Lottie only when Flutter animations can't reach the quality).
@@ -41,10 +44,10 @@ Use animated illustrations that demonstrate the features (see `visual-quality.md
 Configure via `PageTransitionsTheme` / route `pageBuilder` centrally; on iOS keep the swipe-back gesture working (Cupertino-style route or a custom one that supports it). Don't stack your own transition on top of one the router already plays.
 
 ## Navigation
-Active/inactive items: icon swap or fill + label/indicator change in `quick`. Tab content: fade-through. Preserve each tab's state and scroll (`StatefulShellRoute.indexedStack` in go_router or `IndexedStack`). Re-tapping the active tab scrolls to top / pops to root. Badges animate count changes subtly. Never animate the whole bar.
+Active/inactive items: icon swap or fill + label/indicator change using the app's feedback timing. Tab content: fade-through. Preserve each tab's state and scroll (`StatefulShellRoute.indexedStack` in go_router or `IndexedStack`). Re-tapping the active tab scrolls to top / pops to root. Badges animate count changes subtly. Never animate the whole bar.
 
 ## Micro-interactions
-Button press (scale 0.97 + `instant`), card selection, toggles, form validation (gentle shake only for errors, inline message fade-in), loading → success morph, favorite/bookmark (small pop + haptic), counter tweens, snackbars, pull-to-refresh. Each must communicate a result. Pair key ones with `HapticFeedback` (selection/light impact).
+Button press (a subtle press response such as a small scale or tonal change, at feedback timing), card selection, toggles, form validation (gentle shake only for errors, inline message fade-in), loading → success morph, favorite/bookmark (small pop + haptic), counter tweens, snackbars, pull-to-refresh. Each must communicate a result. Pair key ones with `HapticFeedback` (selection/light impact).
 
 ## Implementation rules
 - Prefer implicit animations (`AnimatedContainer`, `AnimatedOpacity`, `AnimatedSwitcher`, `TweenAnimationBuilder`) for simple effects; `AnimationController` + `AnimatedBuilder` for choreography; `Hero`, `animations` package for transitions. Add a dependency only when it clearly beats native code.

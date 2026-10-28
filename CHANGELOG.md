@@ -1,8 +1,10 @@
 # Changelog
 
 ## 1.1.0
+- No semi-fixed defaults: motion timings from each app's motion character (old values are fallbacks), screenshot count/narrative/style derived per app, smallest representative prototype set, colour distribution derived per app.
+- Three app-specific theme concepts (palette, type, icons, components, layout, assets, motion) presented side by side before the UI Kit.
 - App-aware design: no default house style; visual language, onboarding story and compositions derived per app; modern-UI patterns are options, not defaults; adaptive design review.
-- New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — three styles (Device-Hero, Lifestyle, Feature-Grid), copy-length rules, brief questions, 6-frame story, caption & policy rules, exact sizes, flattened exports.
+- New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — app-derived narrative, count and 1–3 directions, copy rules, brief questions, exact store sizes, policy rules, flattened exports.
 - UI Kit-first rule: complete validated kit before any screen; no reskins.
 
 ## 1.0.0 — first public release

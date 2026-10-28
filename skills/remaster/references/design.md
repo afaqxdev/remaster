@@ -14,7 +14,7 @@ Decide and justify, against the dossier (audience, pain points, competitors):
 - Motion language in one sentence (e.g. "quick, springy, spatial — motion explains where things came from")
 - **Graphic inventory and graphic language** (icons, illustrations, empty/success states, app icon) — see `visual-quality.md`
 
-Optionally present 2 contrasting directions in one line each and let the user pick before building the sample.
+Then present **three theme concepts** for the user to choose from (see below) before the UI Kit is built.
 
 ### Ideas, not copies (strict)
 - Work only from the **text** feature/screen inventory in `app-dossier.md`. Do **not** open the original's screenshots, binary resources or store graphics in Phases 3–10.
@@ -25,17 +25,21 @@ Optionally present 2 contrasting directions in one line each and let the user pi
 
 ### Color composition check (must pass before the sample)
 - **Brand hue:** one confident, ownable primary chosen for the audience and mood — not grey-on-beige by default, not the original app's color, not the category cliché unless it's a convention users rely on (e.g. Wordle green/yellow for tile feedback).
-- **Structure:** ~60% neutrals (background/surfaces) · ~30% brand/support · ~10% accent for the few moments that matter. Neutrals are tinted toward the brand hue, never dead grey.
+- **Distribution — derived per app:** decide how colour spreads across backgrounds, surfaces, text, controls, emphasis, illustration and imagery from the brand, category expectations, content, hierarchy and intended emotion. Restrained, neutral, monochromatic, brand-dominant, highly expressive or photo-led are all valid. A ratio such as 60/30/10 may be a starting hypothesis, never a rule or a quality benchmark.
 - **Harmony:** accent and semantic colors (success/warning/error/info, or game states) are picked as a set — analogous or complementary to the brand hue, similar saturation and lightness so nothing looks muddy, neon or out of family.
 - **Contrast:** text ≥ 4.5:1 (≥ 3:1 for large text and UI shapes), measured, in both themes; never rely on color alone (add icons/labels; offer a color-blind palette when color carries meaning).
 - **Dark theme** is designed, not inverted: lifted surfaces, slightly desaturated brand, same hierarchy.
-- **Show it:** build a **Palette** board on the Figma Foundations page — swatches with names, hex, light/dark, contrast ratios, and a 60-30-10 strip — and get it approved with the sample.
+- **Show it:** build a **Palette** board on the Figma Foundations page — swatches with names, hex, light/dark, contrast ratios, and a strip showing the chosen distribution — and get it approved with the sample.
 
 ### App-aware direction — no default style
 Every app gets its own design system. Derive each decision from this app's problem, audience, features, differentiators, desired emotion, category conventions, existing brand assets and competitor research — never from a previous project or a house template.
 - **Answer first (in `design-direction.md`):** what problem it solves · who it's for · core features & differentiators · the emotions it should carry · which category conventions help users · which existing brand elements are requirements vs. mere current implementation · what competitors do (to stand apart, not copy).
 - **Then decide:** palette & semantic tokens · typography & hierarchy · layout & composition · imagery (illustration, photography, 3D, data viz, editorial type…) · iconography · spacing, shapes, surfaces · motion principles · onboarding narrative · accessibility & platform behaviour. Write one line of *why* for each.
-- **Two directions that genuinely differ** (not two palettes on one layout) are presented when the right answer is unclear.
+
+### Three theme concepts (before the UI Kit)
+Create **three clearly different art directions for this app** — never the same three themes across projects — and show them side by side. Each differs in colour system, typography personality, iconography style, component treatment (buttons, cards, nav, inputs, tabs, borders, radii), layout and density, visual assets (photography / illustration / texture / 3D / data viz) and motion personality — not the same template with a new accent.
+For each concept give: a memorable name · why it suits this app (one or two lines) · palette with HEX · typography and iconography · component and layout styling · strengths and trade-offs · and, when tools allow, **one comparable sample screen** built from the same real app content (same screen, same data — only the direction changes).
+Respect mandatory branding (explore three directions within it), accessibility and platform rules; don't trade usability for difference. Keep it concise. Ask: **"Which visual direction would you like to proceed with: Theme 1, Theme 2, or Theme 3?"** — combinations or refinements are welcome. The chosen direction is then refined into the UI Kit; the approval gates still apply.
 - **Existing designs:** keep required functionality, established brand assets and explicit constraints; improve weak decisions; don't reproduce an old design just because it exists, and don't discard established branding without a reason.
 - Research (competitors, category patterns, current trends) when it changes a decision; skip it when it wouldn't.
 
@@ -72,15 +76,15 @@ After building each component and each screen, answer the 5-question professiona
 ### Avoid the generic look
 Do not default to: dashboard templates; maximum radius on everything; grids of identical cards; flat hierarchy; gradients or glassmorphism without reason; stock-looking bottom nav; floating decorative blobs; generic illustrations; heavy shadows/borders; every screen built from the same three components. Every visual choice must serve usability, clarity, brand or quality. Use platform conventions where they help usability, styled for this product.
 
-## Phase 4 — Figma prototype (4–5 screens only)
+## Phase 4 — Figma prototype (a small representative set)
 
 **First build and validate the UI Kit (`ui-kit.md`)** — kit board with every component and state in light and dark — then compose the screens only from it.
 
 ### Pick screens from the dossier
-Typical: splash, onboarding (or auth), **home with primary navigation**, the core feature, one secondary (detail / profile / library / settings). Replace any that don't apply; don't pad to five.
+Choose the **smallest set that validates this app's direction**: identify the essential workflows and the UI Kit components that need proving, then pick screens that cover them — including complex, unusual or high-risk flows when they matter. Splash, onboarding, home or settings appear only if relevant or explicitly required. A simple utility may need two or three screens; a complex product more. Write one line on why each screen was chosen and list important areas intentionally left out of the sample.
 
 ### The sample must establish
-Visual identity, palette (light **and** dark), typography, spacing/layout approach, representative buttons/cards/fields/nav, interaction states, motion direction, responsiveness on the selected platforms. Content must be realistic and grounded in the dossier — no lorem ipsum. The home screen sets the quality bar for the whole app: spend the most effort there. The navigation must feel integrated, with clear active state and restrained transitions.
+Visual identity, palette (light **and** dark), typography, spacing/layout approach, representative buttons/cards/fields/nav, interaction states, motion direction, responsiveness on the selected platforms. Content must be realistic and grounded in the dossier — no lorem ipsum. Spend the most effort on the screen that defines the app's main experience (often, not always, home). The navigation must feel integrated, with clear active state and restrained transitions.
 
 ### Design tooling (explicit)
 - **Primary:** Figma MCP — `use_figma` (Plugin API: variables, text styles, components, frames) and `get_screenshot` for every self-review. Build in the real file; never describe frames you didn't create.
