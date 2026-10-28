@@ -1,6 +1,7 @@
 # Changelog
 
 ## 1.1.0
+- App-aware design: no default house style; visual language, onboarding story and compositions derived per app; modern-UI patterns are options, not defaults; adaptive design review.
 - New `/remaster-store-assets`: Play & App Store screenshots and the Play feature graphic — three styles (Device-Hero, Lifestyle, Feature-Grid), copy-length rules, brief questions, 6-frame story, caption & policy rules, exact sizes, flattened exports.
 - UI Kit-first rule: complete validated kit before any screen; no reskins.
 

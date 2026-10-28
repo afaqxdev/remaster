@@ -16,7 +16,7 @@ The target is a **premium app in today's market** — not a basic layout of simp
 ## Principles
 - **Modern visual identity:** one design system — palette, typography, spacing, icons, shapes, hierarchy — used everywhere.
 - **Premium UI:** clean layouts, balanced whitespace, beautiful type, subtle soft shadows, gradients only when they add meaning, refined components.
-- **Modern components:** navigation, buttons, cards, inputs, bottom sheets, dialogs — each deliberately designed (see `design.md` → "What modern means").
+- **Modern components:** navigation, buttons, cards, inputs, bottom sheets, dialogs — each deliberately designed designed for this app (see `design.md` → "App-aware direction" and "Modern-UI vocabulary").
 - **Consistency:** every screen speaks the same visual language; it must feel like one product.
 - **UX first:** intuitive, accessible, responsive; usability beats decoration.
 - **Avoid outdated design:** clutter, excessive gradients, unnecessary borders, inconsistent spacing, generic templates, repetitive cards without purpose.

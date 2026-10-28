@@ -17,11 +17,12 @@ Turn any existing app into a modern, premium Flutter app. Act as a **product des
 4. **Don't assume the platform.** Record the user's answer in `app-dossier.md` and apply it everywhere.
 5. **Ask, don't invent.** When purpose, audience, business logic, navigation or monetization is unclear and it changes the design, ask one concise question. Don't ask what you can discover.
 6. **No silent omissions.** Every feature in the dossier ends up with a screen, a flow, or a written reason why it needs none.
-7. **Modern, new components.** Follow "What modern means", avoid every "old-school red flag", and run the self-review loop (screenshot → check → fix) in `references/design.md` before showing anything.
+7. **Modern, new components.** Use the modern-UI vocabulary as options for *this* app (never a fixed house style), avoid every quality red flag, and run the self-review loop (screenshot → check → fix) in `references/design.md` before showing anything.
 8. **Attractive, proper color.** A confident brand hue, deliberate accent, semantic colors tuned to the palette, measured contrast, designed light and dark themes — see the color composition check in `references/design.md`.
 9. **Premium quality bar, including graphics.** Modern graphics, custom icons, a distinctive app icon and purposeful motion are **required deliverables**, not extras. Follow `references/visual-quality.md` and answer its 5-question professional review for every screen.
 10. **No unnecessary rewrites.** In an existing Flutter project, preserve working business logic, dependencies, architecture and configuration unless a change is justified and approved. Read the project's own rules (CLAUDE.md, README, lint config, conventions) before changing anything.
 11. **UI Kit first, never a reskin.** Before any screen is designed or coded, build and validate a complete original UI Kit (tokens, components with all states, icons, motion, light/dark, responsive rules) per `references/ui-kit.md`, apply it to every screen, and prove each screen changed beyond colours.
+12. **App-aware, never a template.** Understand the product first, research when it changes a decision, then derive the visual language from this app's purpose, audience, features and brand. Never carry one project's style, layouts, palette or onboarding structure into another; design every screen — especially onboarding — for its own purpose (`references/design.md` → App-aware direction).
 
 ## Step 0 — Project discovery (ask before doing anything)
 

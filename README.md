@@ -39,7 +39,7 @@ It takes the *idea* from the original app, never its design.
 | "Make an app like X" → a generic template or a near-copy | Research → a written list of needs → an **original** design on a blank canvas |
 | Screens invented from screenshots | Feature list from store data, reviews, competitors and (optionally) your APK — every claim labeled *verified / inferred / assumption* |
 | Code starts before anyone agreed on the look | **Gate 1**: you approve a light + dark Figma prototype. **Gate 2**: you say yes before any code. |
-| Outlined cards, beige palettes, default widgets | Enforced modern UI rules, a colour-composition check and a 5-question design review on every screen |
+| One template look for every app | An **app-aware** design system derived from each product's purpose, audience and brand — plus a colour-composition check and a design review on every screen |
 | "Add some animation" | Key moments built as **Figma Motion timelines** whose springs map 1:1 to Flutter |
 | "Looks done" | Scripted audit: analysis, golden tests, emulator screenshots compared with Figma |
 

@@ -31,22 +31,36 @@ Optionally present 2 contrasting directions in one line each and let the user pi
 - **Dark theme** is designed, not inverted: lifted surfaces, slightly desaturated brand, same hierarchy.
 - **Show it:** build a **Palette** board on the Figma Foundations page — swatches with names, hex, light/dark, contrast ratios, and a 60-30-10 strip — and get it approved with the sample.
 
-### What "modern" means here (2025–26 mobile) — use this vocabulary
-- **Floating navigation:** a detached capsule bar (radius = height/2) floating 16px above the bottom edge with a soft shadow; the active item is a filled brand pill with icon + label, inactive items icon-only. Never a full-width bar with a hairline top border.
-- **Tonal surfaces, not outlines:** cards and inputs separate by fill (surface on tinted background) and soft, large-blur, low-opacity shadows — not 1px borders around everything.
-- **Bento layouts:** mix one large hero card with smaller side-by-side cards of different sizes; avoid stacked full-width cards of equal weight.
-- **Big, confident type:** large display numbers/headlines with tight tracking; small uppercase labels for context.
-- **Generous, consistent radii:** 20–28 on cards and sheets, full pills for buttons/chips, 10–12 on small controls.
-- **Brand color used boldly once per screen:** a hero card or primary action in the brand color, with on-brand content and a subtle brand motif (e.g., translucent shapes) instead of gradient noise.
-- **Circular tonal icon buttons** (sunken fill, 40–44px) instead of bare icons.
-- **The primary action stands out:** the main action is a full pill in the brand color, and the secondary action is a tonal (filled-light) pill.
-- **Data as visuals:** progress bars, rings, mini-boards and chips instead of plain text rows.
+### App-aware direction — no default style
+Every app gets its own design system. Derive each decision from this app's problem, audience, features, differentiators, desired emotion, category conventions, existing brand assets and competitor research — never from a previous project or a house template.
+- **Answer first (in `design-direction.md`):** what problem it solves · who it's for · core features & differentiators · the emotions it should carry · which category conventions help users · which existing brand elements are requirements vs. mere current implementation · what competitors do (to stand apart, not copy).
+- **Then decide:** palette & semantic tokens · typography & hierarchy · layout & composition · imagery (illustration, photography, 3D, data viz, editorial type…) · iconography · spacing, shapes, surfaces · motion principles · onboarding narrative · accessibility & platform behaviour. Write one line of *why* for each.
+- **Two directions that genuinely differ** (not two palettes on one layout) are presented when the right answer is unclear.
+- **Existing designs:** keep required functionality, established brand assets and explicit constraints; improve weak decisions; don't reproduce an old design just because it exists, and don't discard established branding without a reason.
+- Research (competitors, category patterns, current trends) when it changes a decision; skip it when it wouldn't.
 
-### Old-school red flags (any one = redesign that element)
-Full-width bottom bar with hairline + top indicator · 1px outlines on every card/button · beige/grey-only palette with no brand color · small radii everywhere (4–8) on cards · equal stacked list-cards · plain text stats · bare icon buttons · Material default app bar · underlined tabs · heavy drop shadows or bevels · clip-art.
+### Modern-UI vocabulary (options, not defaults)
+Use what serves *this* app; none of these is mandatory and none should become a habit across projects:
+floating or standard navigation bars, rails, tabs or single-stack navigation · tonal surfaces vs. outlined vs. flat editorial sections · bento grids vs. lists vs. full-bleed media · big display type vs. quiet, content-first type · generous vs. tight radii · bold brand moments vs. restrained colour · photography, illustration, 3D or data visualisation as the main imagery · data shown as charts, rings, chips or tables.
+
+### Quality red flags (any one = rework that element)
+Defaults left unstyled (stock Material/Cupertino look with only a colour swap) · flat hierarchy where everything has equal weight · inconsistent spacing or radii · outlines and shadows piled on every element · colour with no clear brand role, or contrast failures · decorative graphics with no purpose · clutter on small screens · dated effects (glossy bevels, heavy drop shadows, clip-art) · a layout that could belong to any app in any category.
+
+### Onboarding — every screen intentional
+Decide the story first (what the user must understand, feel and do by the end), then the purpose of each screen, then a composition chosen for that message: device-focused, immersive illustration, contextual photography, diagram, interactive preview, editorial typography, or something new. Never stamp one layout and swap text/art. Vary compositions when it helps the story; repeat one when repetition genuinely serves the flow. Skip onboarding entirely if the app is self-explanatory.
+
+### Consistency ≠ sameness
+Keep typography, colour tokens, component behaviour, spacing logic, iconography and accessibility consistent. Let composition, artwork, hierarchy, background treatment and focal points change when the content and journey justify it.
+
+### Adaptive design review (before presenting)
+- Does the direction fit this product and audience — would it look wrong on a different app?
+- Does each screen have one clear purpose?
+- Are repeated compositions there on purpose, and do variations feel intentional rather than random?
+- Distinctive without hurting usability, platform conventions or feasibility in Flutter?
+If it feels generic or like a template unrelated to the app, go back to the direction.
 
 ### Self-review loop (mandatory before showing anything)
-After building each component and each screen, answer the 5-question professional review in `visual-quality.md`, then: screenshot it, check it against "What modern means", the red flags, the color composition check and the dossier's do-not-copy list (text only — never the original's screenshots), and fix what fails. Only then present it.
+After building each component and each screen, answer the 5-question professional review in `visual-quality.md`, then: screenshot it, check it against the app-aware direction, the quality red flags, the adaptive design review, the color composition check and the dossier's do-not-copy list (text only — never the original's screenshots), and fix what fails. Only then present it.
 
 ### Component freshness check (every component)
 - Built for this product's personality, not a stock widget with a color swap.
