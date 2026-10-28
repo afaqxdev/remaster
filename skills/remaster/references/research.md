@@ -62,6 +62,14 @@ Use screenshots, store text, release notes, the product's website/help center/do
 
 **Never present inferred backend behavior as verified.**
 
+### Services & cost (match the user's budget from Step 0)
+List every external service the app and its competitors rely on or a feature needs — backend/auth/database, maps, AI/LLM, speech, payments, push, SMS/OTP, analytics, ads, storage/CDN, search — from SDKs found in the binary, store text, privacy policy/data-safety section and competitor research. Label each `[verified]` or `[inferred]`.
+For each, check current pricing (pricing pages change; record the date) and propose an option that fits the budget:
+- **Budget 0:** free tier, open-source/self-hostable, or on-device (e.g. on-device ML, local storage, OpenStreetMap-based maps, free-tier BaaS). State the free tier's real limits (requests/month, users, sleep/inactivity rules, attribution, card-on-file requirements) and what happens when the app outgrows it.
+- **Small budget:** the cheapest option that covers expected usage, with a rough monthly estimate.
+- **No viable free option:** say so, and offer a redesign of the feature (cache, batch, on-device, user-supplied key, or defer to a later version) — never silently keep a paid dependency.
+Never present a trial, a credit-based promo or a "free for 30 days" plan as free. Prefer options with no vendor lock-in so the app can upgrade later without rewriting the UI.
+
 **Reverse engineering is for understanding, not copying.** Extract features, flows, states, copy *meaning* and data — never carry the original's layouts, drawables, colors, icons or text into the redesign.
 
 ## `app-dossier.md` structure
@@ -71,6 +79,7 @@ Use screenshots, store text, release notes, the product's website/help center/do
 Target platform: <Android | iOS | Both>   (user's choice, Step 0)
 Binary supplied: <APK | IPA (encrypted?) | none>
 Project: <new Flutter app | existing codebase at ...>
+Budget: <0 (free only) | ~<amount>/month>   (user's choice, Step 0)
 
 ## Overview            — purpose, audience, value proposition
 ## Store listing       — ids, category, rating, pricing, languages, last update
@@ -89,6 +98,7 @@ Project: <new Flutter app | existing codebase at ...>
 ## Subscription & payments (if any)
 ## States              — loading / empty / error / success per area
 ## Integrations & data models (if discoverable)
+## Services & cost      — table: need | original/competitor uses | chosen option | cost/free-tier limits | label | checked on
 ## Open questions & assumptions
 ## Sources & tools
 ```

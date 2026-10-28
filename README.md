@@ -10,7 +10,7 @@
 *Researched. Designed in Figma. Approved by you. Then built and audited.*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-0E7C74?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.1.0-0E7C74?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.2.0-0E7C74?style=flat-square)](CHANGELOG.md)
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-0D2422?style=flat-square)](#install)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-0D2422?style=flat-square)](AGENTS.md)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-2F8F4E?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -49,8 +49,8 @@ It takes the *idea* from the original app, never its design.
 
 | Phase | What happens | You get |
 |---|---|---|
-| **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets | `status.md` |
-| **1–2 · Research** | Store listing, review themes, 2–4 competitors, missing features | `app-dossier.md` + do-not-copy list |
+| **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets, **budget** (0 = free options only) | `status.md` |
+| **1–2 · Research** | Store listing, review themes, 2–4 competitors, missing features, services & cost (free alternatives on a 0 budget) | `app-dossier.md` + do-not-copy list |
 | **3 · Direction** | Brand colour, palette check, type, shapes, icon & illustration style | `design-direction.md` |
 | **4 · Prototype** | 3 app-specific theme concepts → your pick → UI Kit → a small representative screen set in light **and** dark | Figma file |
 | **⛔ Gate 1** | You approve style, colours, type, layout, navigation, motion | — |

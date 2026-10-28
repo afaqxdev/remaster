@@ -32,8 +32,11 @@ Ask in a single message:
 3. Can you provide the APK or IPA? (Optional. Enables deeper analysis; without it we use public listings, screenshots and reviews.)
 4. New Flutter project, or an existing codebase (path)? Is source code available?
 5. Any existing design assets (brand, logo, fonts, Figma) to respect, and which deliverables do you need (Figma only, or Figma + Flutter code)?
+6. Monthly budget for paid services (APIs, backend, hosting, maps, AI, SMS…)? **0** = start from zero: free tiers, open-source and on-device options only. Otherwise a rough monthly amount.
 
 With question 3, include the **"Supplying an APK or IPA"** guide from `references/research.md` (the skill never downloads binaries itself).
+
+Record the budget in `status.md` and `app-dossier.md`; it governs every service choice (`references/research.md` → Services & cost). With budget 0, never pick a paid-only service — find a free alternative or redesign the feature, and say what the free option limits.
 
 If the user has no binary, continue without it and label findings `[inferred]`. **Check the design tooling now:** call the Figma MCP `whoami`; if it isn't connected, tell the user to authorize it via `/mcp`, or agree on the fallback (Figma-ready spec + `design-tokens.json` + SVG wireframes) before Phase 3. If an existing project is given, inspect its rules and structure now (read-only). Create the output folder `redesign/<app-slug>/`; all deliverables go there.
 

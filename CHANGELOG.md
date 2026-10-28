@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0
+- Step 0 asks for a monthly budget for paid services; **0** means free tiers, open-source and on-device options only.
+- Research lists every external service the app or its competitors use (backend, maps, AI, SMS, payments…), with current pricing, free-tier limits and a budget-fitting alternative — or a feature redesign when nothing free works. Recorded in `app-dossier.md` → Services & cost and carried into the dev spec.
+
 ## 1.1.0
 - No semi-fixed defaults: motion timings from each app's motion character (old values are fallbacks), screenshot count/narrative/style derived per app, smallest representative prototype set, colour distribution derived per app.
 - Three app-specific theme concepts (palette, type, icons, components, layout, assets, motion) presented side by side before the UI Kit.

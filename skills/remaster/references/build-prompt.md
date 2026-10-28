@@ -49,6 +49,7 @@ Transition rules per route, splash, onboarding, nav, micro-interactions, reduced
 
 ## 8. Data & backend boundaries
 Repositories/interfaces per feature; which are real (with known endpoints) vs approved placeholders.
+Services from `app-dossier.md` → Services & cost, within the user's budget: the chosen provider/package per need, its free-tier limits, and the upgrade path behind the same interface. With budget 0, no paid-only package or service appears in the spec.
 
 ## 9. Localization & accessibility
 ARB-based l10n, RTL if relevant, semantics labels, text scaling, contrast, 48dp targets.
