@@ -92,7 +92,7 @@ The sample is a **design** in Figma. Do **not** write Flutter or any app code be
 
 Using the Figma MCP (load its `figma-use` skill / `get_figma_skill` first, then `create_new_file` → `create_session` → `use_figma`):
 - Pages **"App icon"** and **"Graphics"** are built in Phase 6 (key graphic pieces may already appear in the prototype) — see `visual-quality.md`.
-- Page **"Foundations"**: color variables (light + dark modes), text styles, spacing/radius variables, and the components the sample needs (tile states, key, button, nav bar, cards).
+- Page **"Foundations"**: color variables (light + dark modes), text styles, spacing/radius variables, and the components this app's sample needs (from the UI Kit).
 - Page **"Sample"**: one phone frame per screen at the target platform's size (Android 412×917, iOS 393×852), built from those components with Auto Layout and realistic content. **Deliver every sample screen in both light and dark mode** (same frames, Dark variable mode) so the user approves both themes at Gate 1.
 - Motion direction as short annotation notes beside the frames (and a simple prototype link between frames if practical).
 - Check every frame with `get_screenshot` and fix overlaps/clipping before showing the user.
