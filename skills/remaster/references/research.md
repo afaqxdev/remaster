@@ -67,7 +67,9 @@ List every external service the app and its competitors rely on or a feature nee
 For each, check current pricing (pricing pages change; record the date) and propose an option that fits the budget:
 - **Budget 0:** free tier, open-source/self-hostable, or on-device (e.g. on-device ML, local storage, OpenStreetMap-based maps, free-tier BaaS). State the free tier's real limits (requests/month, users, sleep/inactivity rules, attribution, card-on-file requirements) and what happens when the app outgrows it.
 - **Small budget:** the cheapest option that covers expected usage, with a rough monthly estimate.
-- **No viable free option:** say so, and offer a redesign of the feature (cache, batch, on-device, user-supplied key, or defer to a later version) — never silently keep a paid dependency.
+- **No viable free option:** keep the feature in the design and the spec exactly as planned, and tell the user. Offer ways to power it for free (caching, batching, on-device processing, a key the end user supplies) next to the cheapest paid option, and let the user choose. Never drop, simplify, hide or postpone a feature because of the budget unless the user says so, and never silently keep a paid dependency.
+
+The budget picks providers, not features: the feature inventory, screens, states and design quality are the same at budget 0 as at any other budget.
 Never present a trial, a credit-based promo or a "free for 30 days" plan as free. Prefer options with no vendor lock-in so the app can upgrade later without rewriting the UI.
 
 **Reverse engineering is for understanding, not copying.** Extract features, flows, states, copy *meaning* and data — never carry the original's layouts, drawables, colors, icons or text into the redesign.

@@ -36,7 +36,7 @@ Ask in a single message:
 
 With question 3, include the **"Supplying an APK or IPA"** guide from `references/research.md` (the skill never downloads binaries itself).
 
-Record the budget in `status.md` and `app-dossier.md`; it governs every service choice (`references/research.md` → Services & cost). With budget 0, never pick a paid-only service — find a free alternative or redesign the feature, and say what the free option limits.
+Record the budget in `status.md` and `app-dossier.md`; it governs every service choice (`references/research.md` → Services & cost). **The budget changes which provider powers a feature, never the feature list, the design or its quality.** A 0 budget still gets every feature in the dossier, every screen and state, and the full premium design. With budget 0, never pick a paid-only service: find a free provider for the same feature and say what its free tier limits. If no free provider exists, keep the feature and ask the user how to power it — never drop, simplify or hide it on your own.
 
 If the user has no binary, continue without it and label findings `[inferred]`. **Check the design tooling now:** call the Figma MCP `whoami`; if it isn't connected, tell the user to authorize it via `/mcp`, or agree on the fallback (Figma-ready spec + `design-tokens.json` + SVG wireframes) before Phase 3. If an existing project is given, inspect its rules and structure now (read-only). Create the output folder `redesign/<app-slug>/`; all deliverables go there.
 

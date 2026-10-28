@@ -2,6 +2,7 @@
 
 ## 1.2.0
 - Step 0 asks for a monthly budget for paid services; **0** means free tiers, open-source and on-device options only.
+- The budget only changes which provider powers a feature — never the feature list, screens, states or design quality. When nothing free works, the feature stays and the user chooses how to power it.
 - Research lists every external service the app or its competitors use (backend, maps, AI, SMS, payments…), with current pricing, free-tier limits and a budget-fitting alternative — or a feature redesign when nothing free works. Recorded in `app-dossier.md` → Services & cost and carried into the dev spec.
 
 ## 1.1.0

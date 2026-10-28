@@ -49,7 +49,7 @@ It takes the *idea* from the original app, never its design.
 
 | Phase | What happens | You get |
 |---|---|---|
-| **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets, **budget** (0 = free options only) | `status.md` |
+| **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets, **budget** (0 = free providers only; features and design stay the same) | `status.md` |
 | **1–2 · Research** | Store listing, review themes, 2–4 competitors, missing features, services & cost (free alternatives on a 0 budget) | `app-dossier.md` + do-not-copy list |
 | **3 · Direction** | Brand colour, palette check, type, shapes, icon & illustration style | `design-direction.md` |
 | **4 · Prototype** | 3 app-specific theme concepts → your pick → UI Kit → a small representative screen set in light **and** dark | Figma file |
