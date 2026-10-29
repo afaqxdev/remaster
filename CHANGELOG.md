@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.0
+- Update check at the start of every run (once per session): compares the installed version with the latest on GitHub and, when newer, asks *update now or continue?* Updates only on a yes; silent when up to date or offline. Every command runs it.
+
 ## 1.3.0
 - New **Phase 2b — Engagement, retention & habit design** (`/remaster-engagement`): reasons users return or leave, one core loop (trigger → action → reward → progress → reason to return), the smallest set of mechanics with justification and priority, retention UX (first value, return after 1 day/week/month, notification timing and controls), an ethical checklist and a measurement plan → `engagement-retention.md`, approved by the user before any retention UI.
 - Rule 13 *Ethical engagement*: no deceptive countdowns, fake scarcity or social proof, punishing streaks, artificial waits or hard-to-leave flows.

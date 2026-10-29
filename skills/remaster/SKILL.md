@@ -25,6 +25,16 @@ Turn any existing app into a modern, premium Flutter app. Act as a **product des
 12. **App-aware, never a template.** Understand the product first, research when it changes a decision, then derive the visual language from this app's purpose, audience, features and brand. Never carry one project's style, layouts, palette or onboarding structure into another; design every screen — especially onboarding — for its own purpose (`references/design.md` → App-aware direction).
 13. **Ethical engagement.** Design for voluntary return, never compulsive use: no deceptive countdowns, fake scarcity or social proof, punishing streaks, artificial waits or hard-to-leave flows; streaks and reminders stay optional. Add retention mechanics only after the engagement strategy is approved (`references/engagement.md`).
 
+## Update check (start of every run, once per session)
+
+Installed version: **1.4.0**
+
+Fetch `https://raw.githubusercontent.com/afaqxdev/remaster/main/.claude-plugin/plugin.json` (WebFetch or `curl -s -m 5`) and compare its `version` with the installed version above.
+- **Newer version available:** ask in one line — *"Remaster <new> is available (you have <installed>). Update now, or continue with this version?"* Wait for the answer.
+  - **Update:** run `claude plugin update remaster@remaster` (a manual install: `git pull` in the clone, then copy `skills/*` into `~/.claude/skills/` again). Tell the user the new version loads after `/reload-plugins` or in a new session, then continue the request on the current version unless they want to reload first.
+  - **Continue:** carry on; don't ask again this session.
+- **Same version, offline, or the fetch fails:** say nothing and continue. Never block the user's request on the check, and never update without a yes.
+
 ## Step 0 — Project discovery (ask before doing anything)
 
 Ask in a single message:

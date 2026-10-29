@@ -7,6 +7,7 @@ description: Remaster command — design engagement, retention and habit mechani
 
 Run **Phase 2b** of the `remaster` workflow.
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Read `status.md` and `app-dossier.md` (run `/remaster-research` first if there is no dossier).
 2. Read the `remaster` skill's `SKILL.md` (rules) and `references/engagement.md`.
 3. Research reference apps only as far as decisions need; define the core loop; pick the smallest set of mechanics with justification and priority; design the retention UX; tick the ethical checklist; write the measurement plan.

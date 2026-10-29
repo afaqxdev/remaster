@@ -7,6 +7,7 @@ description: Remaster command — run only the research phases (Step 0 discovery
 
 Run **Step 0 and Phases 1–2 only** of the `remaster` workflow.
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Read the `remaster` skill's `SKILL.md` (rules, Step 0, skills-per-phase table) and `references/research.md`.
 2. Ask the Step 0 questions in one message (app/link, platform, APK/IPA with the supply guide, project, assets, deliverables, monthly budget — 0 means free options only).
 3. Do the research exactly as `research.md` describes; label every claim `[verified]`, `[inferred]` or `[assumption]`.

@@ -7,6 +7,7 @@ description: Remaster command — implement the approved Figma design in Flutter
 
 Run **Phase 9** of the `remaster` workflow.
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Read `status.md` and `build-prompt.md`. If Gate 2 isn't recorded, ask: "The Figma design is complete and audited. Shall I convert it into Flutter code?" and wait for an explicit yes.
 2. Read the `remaster` skill's `references/implementation.md` and `references/motion-research.md`; load `ponytail` and Figma's `figma-implement-motion`.
 3. Work one sub-step at a time (9a → 9d), verifying each. UI depends only on injected interfaces; 9c → 9d changes DI bindings only.

@@ -10,7 +10,7 @@
 *Researched. Designed in Figma. Approved by you. Then built and audited.*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-0E7C74?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.3.0-0E7C74?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.4.0-0E7C74?style=flat-square)](CHANGELOG.md)
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-0D2422?style=flat-square)](#install)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-0D2422?style=flat-square)](AGENTS.md)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-2F8F4E?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -92,7 +92,7 @@ Or just ask: *"Remaster the app at https://play.google.com/store/apps/details?id
 /plugin install remaster@remaster
 ```
 
-**Get updates automatically:** `/plugin` → **Marketplaces** → **remaster** → **Enable auto-update**. Third-party marketplaces don't auto-update by default; without it, update with `claude plugin update remaster@remaster`.
+Remaster also checks for a newer version each time you use it and asks whether to update. **Get updates automatically:** `/plugin` → **Marketplaces** → **remaster** → **Enable auto-update**. Third-party marketplaces don't auto-update by default; without it, update with `claude plugin update remaster@remaster`.
 
 **Claude Code (manual)**
 

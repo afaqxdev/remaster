@@ -5,6 +5,7 @@ description: Remaster command — show where a redesign project stands (current 
 
 # /remaster-status
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Find `redesign/*/status.md` in the working directory (ask which one if there are several).
 2. Summarize in at most 8 lines: phase, gates passed, Figma link, artifacts present, open questions.
 3. End with the single next command to run (`/remaster-engagement`, `/remaster-sample`, `/remaster-motion`, `/remaster-build`, …).

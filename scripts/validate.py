@@ -72,6 +72,9 @@ try:
     top = re.search(r"^## (\d+\.\d+\.\d+)", (ROOT / "CHANGELOG.md").read_text(), re.M)
     if not top or top.group(1) != plugin.get("version"):
         err("CHANGELOG.md top version must equal plugin.json version")
+    inst = re.search(r"^Installed version: \*\*(\d+\.\d+\.\d+)\*\*", (ROOT / "skills/remaster/SKILL.md").read_text(), re.M)
+    if not inst or inst.group(1) != plugin.get("version"):
+        err("skills/remaster/SKILL.md 'Installed version' must equal plugin.json version")
 except (OSError, json.JSONDecodeError) as e:
     err(f"manifest error: {e}")
 

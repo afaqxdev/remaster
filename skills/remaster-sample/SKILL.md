@@ -7,6 +7,7 @@ description: Remaster command — design three app-specific theme concepts, the 
 
 Run **Phases 3–4 and Gate 1** of the `remaster` workflow.
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Read `redesign/<app-slug>/status.md` and `app-dossier.md`. If the dossier is missing, run `/remaster-research` first.
 2. Read the `remaster` skill's `SKILL.md`, `references/design.md` and `references/visual-quality.md`.
 3. Load only the Phase 3–4 skills from the skills-per-phase table.

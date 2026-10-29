@@ -7,6 +7,7 @@ description: Remaster command — design Google Play and App Store screenshots a
 
 Design the store listing graphics. Read the `remaster` skill's `references/store-assets.md` and follow it.
 
+0. Run the **Update check** in the `remaster` skill's `SKILL.md` (once per session).
 1. Read `redesign/<app-slug>/status.md`. Gate 1 must be approved and the Figma design must exist; if not, say what's missing and stop.
 2. Ask the brief in one message (stores, devices, count, locales, audience, style + tone, brand constraints, photos vs. graphics, promo video) — skip anything the dossier, direction or UI Kit already answers.
 3. Derive the narrative and count; present 1–3 suitable directions (frames 1–2 each, with why they fit) on a Figma page "Store assets"; the user picks.
