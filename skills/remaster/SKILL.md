@@ -7,7 +7,7 @@ description: Research an existing mobile app (Google Play / App Store, optional 
 
 Turn any existing app into a modern, premium Flutter app. Act as a **product designer first and a Flutter developer second.** Research the app, establish a distinctive visual identity, get the design approved, implement it faithfully, and verify the result. Never jump from screenshots to generic UI, and never code before the final Figma design is approved.
 
-**Workflow:** Step 0 discovery → 1–2 research & dossier → 3 visual direction → 4 Figma prototype → **GATE 1** → 5 complete Figma design → 6 graphics & app icon → 7 motion system → 8 development spec → **GATE 2** → 9 Flutter implementation → 10 visual & technical audit.
+**Workflow:** Step 0 discovery → 1–2 research & dossier → 2b engagement & retention (approval) → 3 visual direction → 4 Figma prototype → **GATE 1** → 5 complete Figma design → 6 graphics & app icon → 7 motion system → 8 development spec → **GATE 2** → 9 Flutter implementation → 10 visual & technical audit.
 
 ## Non-negotiable rules
 
@@ -23,6 +23,7 @@ Turn any existing app into a modern, premium Flutter app. Act as a **product des
 10. **No unnecessary rewrites.** In an existing Flutter project, preserve working business logic, dependencies, architecture and configuration unless a change is justified and approved. Read the project's own rules (CLAUDE.md, README, lint config, conventions) before changing anything.
 11. **UI Kit first, never a reskin.** Before any screen is designed or coded, build and validate a complete original UI Kit (tokens, components with all states, icons, motion, light/dark, responsive rules) per `references/ui-kit.md`, apply it to every screen, and prove each screen changed beyond colours.
 12. **App-aware, never a template.** Understand the product first, research when it changes a decision, then derive the visual language from this app's purpose, audience, features and brand. Never carry one project's style, layouts, palette or onboarding structure into another; design every screen — especially onboarding — for its own purpose (`references/design.md` → App-aware direction).
+13. **Ethical engagement.** Design for voluntary return, never compulsive use: no deceptive countdowns, fake scarcity or social proof, punishing streaks, artificial waits or hard-to-leave flows; streaks and reminders stay optional. Add retention mechanics only after the engagement strategy is approved (`references/engagement.md`).
 
 ## Step 0 — Project discovery (ask before doing anything)
 
@@ -47,6 +48,7 @@ Before using a skill, check it is installed and read its instructions once; if i
 | Phase | Load | Never load here |
 |---|---|---|
 | 0–2 Discovery & research | WebSearch/WebFetch/`curl`; `competitive-teardown` (competitor analysis); `ux-researcher-designer` (personas, journeys from reviews); `reverse-engineer-anything` only if a binary is supplied | design skills, Ponytail |
+| 2b Engagement | WebSearch/WebFetch (reference apps, only when it changes a decision); `ux-researcher-designer` (reasons to return/abandon); `product-analytics` or `experiment-designer` (measurement plan) if installed | design skills, Ponytail |
 | 3–4 Direction & prototype | `ui-ux-pro-max`, `emil-design-eng`, `ui-design-system` (tokens); `apple-hig-expert` only if iOS is a target; Figma MCP (`figma-use`, `figma-generate-design`) | Ponytail, Flutter tooling |
 | 5–7 Full design, graphics, motion | Figma MCP + `figma-use-motion` (timelines) — read `references/motion-research.md`; `ui-design-system` (component docs); `apple-hig-expert` (iOS only); `design` (icons/app icon) or `brand` when making graphics; `design:design-critique` / `design:accessibility-review` for reviews; `animate` for motion decisions | Ponytail, Flutter tooling |
 | 8 Dev spec | flutter.dev / pub.dev docs only for package choices | design skills (decisions are already in the artifacts) |
@@ -63,6 +65,7 @@ Read each reference file when you reach its phase — not before.
 | Phase | Reference | Output |
 |---|---|---|
 | 1–2. Research & app dossier (store, reviews, competitors, flows; binary if supplied) | [references/research.md](references/research.md) | `app-dossier.md` — feature inventory, user journeys, pain points, competitor notes, do-not-copy list |
+| 2b. Engagement, retention & habit design (loop, smallest set of mechanics, retention UX, ethics, measurement) → **user approval** | [references/engagement.md](references/engagement.md) | `engagement-retention.md` |
 | 3. Visual direction & design skills | [references/design.md](references/design.md), [references/visual-quality.md](references/visual-quality.md) | `design-direction.md` — colors, type, spacing, shapes, icon style, illustration style, motion principles, light/dark |
 | 4. **UI Kit, then Figma prototype** (3 theme concepts → user pick → validated kit board → smallest representative screen set in light + dark, no code) | [references/design.md](references/design.md) | Figma Foundations + prototype screens, `sample-design.md`, draft `build-prompt.md` |
 | **GATE 1** | — | User approves style, colors, type, layout, navigation, graphics, motion direction |
@@ -76,6 +79,10 @@ Read each reference file when you reach its phase — not before.
 | 10. Visual & technical audit (scripted) | [references/implementation.md](references/implementation.md) | `flutter analyze`, unit/widget/golden/integration tests, emulator screenshots diffed against Figma exports, fixes until criteria pass |
 
 No app code is written in Phases 1–8 — everything before Gate 2 is research, Figma and specs.
+
+## Engagement approval (end of Phase 2b)
+
+Present the core loop, the chosen mechanics with their expected user benefit, and the ethical checklist. Add retention-specific UI or functionality only after the user approves; record it in `status.md`.
 
 ## Gate 1 (end of Phase 4)
 

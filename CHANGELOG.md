@@ -1,9 +1,14 @@
 # Changelog
 
+## 1.3.0
+- New **Phase 2b — Engagement, retention & habit design** (`/remaster-engagement`): reasons users return or leave, one core loop (trigger → action → reward → progress → reason to return), the smallest set of mechanics with justification and priority, retention UX (first value, return after 1 day/week/month, notification timing and controls), an ethical checklist and a measurement plan → `engagement-retention.md`, approved by the user before any retention UI.
+- Rule 13 *Ethical engagement*: no deceptive countdowns, fake scarcity or social proof, punishing streaks, artificial waits or hard-to-leave flows.
+- Approved mechanics flow into the UI Kit, the prototype screen set, Phase 5 states, motion key moments, the dev spec (logic, notifications, analytics events) and both audits.
+
 ## 1.2.0
 - Step 0 asks for a monthly budget for paid services; **0** means free tiers, open-source and on-device options only.
 - The budget only changes which provider powers a feature — never the feature list, screens, states or design quality. When nothing free works, the feature stays and the user chooses how to power it.
-- Research lists every external service the app or its competitors use (backend, maps, AI, SMS, payments…), with current pricing, free-tier limits and a budget-fitting alternative — or a feature redesign when nothing free works. Recorded in `app-dossier.md` → Services & cost and carried into the dev spec.
+- Research lists every external service the app or its competitors use (backend, maps, AI, SMS, payments…), with current pricing, free-tier limits and a budget-fitting alternative. Recorded in `app-dossier.md` → Services & cost and carried into the dev spec.
 
 ## 1.1.0
 - No semi-fixed defaults: motion timings from each app's motion character (old values are fallbacks), screenshot count/narrative/style derived per app, smallest representative prototype set, colour distribution derived per app.

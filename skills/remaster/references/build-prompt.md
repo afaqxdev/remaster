@@ -22,6 +22,7 @@ Purpose, audience, target platform(s): <Android | iOS | Both>. Verified features
 - **Data contract:** every model (fields, types, nullability, JSON keys) and every repository interface (methods, errors) per feature.
 - **Dependency injection & mock data layer:** every repository/service is an interface injected via DI (Riverpod providers / `get_it` / constructors). Mock implementations + fixtures cover every state in `screen-specifications.md` (empty, loading, error, offline, success) and are selected by DI overrides, so 9b–9c run without a backend and 9d swaps to real implementations with zero UI changes.
 - **Persistence & services:** local storage choice, analytics/ads/billing boundaries behind interfaces.
+- **Engagement:** approved mechanics' logic (progress, rewards, streak rules incl. freeze/repair), notification schedule, permission timing and per-type controls, and the analytics events from the measurement plan in `engagement-retention.md` — all behind interfaces.
 
 ## 2b. Project
 - New app: `flutter create --org <org> --platforms=<...> <name>`; build from the approved Figma frames.

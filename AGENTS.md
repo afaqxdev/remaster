@@ -9,4 +9,4 @@ If your agent reads `AGENTS.md` instead:
 3. Never write app code before the user explicitly approves the final design (Gate 2), never copy the original app's design, never download app binaries, and never claim work you didn't do.
 4. Keep progress in `redesign/<app-slug>/status.md`.
 
-Commands map to `skills/remaster-*/SKILL.md` (research, sample, motion, build, audit, status, help).
+Commands map to `skills/remaster-*/SKILL.md` (research, engagement, sample, motion, store-assets, build, audit, status, help).

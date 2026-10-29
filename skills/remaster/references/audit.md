@@ -10,6 +10,7 @@ Walk `app-dossier.md` line by line against the deliverables. Don't declare done 
 - [ ] Every route in `ux-flows.md` exists in `screen-specifications.md` and the build prompt
 - [ ] Splash, onboarding, home and primary navigation designed and animated
 - [ ] Loading / empty / error / success / disabled states covered where applicable
+- [ ] Approved engagement mechanics designed with their states (progress, reward, completion, comeback, notification settings); ethical checklist in `engagement-retention.md` holds; streaks and reminders can be turned off
 - [ ] All screens and components use tokens only
 - [ ] UI Kit complete and validated; every screen built only from it; per-screen check shows changes beyond colour (layout, components, type, spacing, navigation, icons)
 - [ ] Every transition follows `motion-system.md`; reduced-motion alternatives exist

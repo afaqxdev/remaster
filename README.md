@@ -10,7 +10,7 @@
 *Researched. Designed in Figma. Approved by you. Then built and audited.*
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-0E7C74?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2.0-0E7C74?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.3.0-0E7C74?style=flat-square)](CHANGELOG.md)
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-0D2422?style=flat-square)](#install)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-0D2422?style=flat-square)](AGENTS.md)
 [![Flutter](https://img.shields.io/badge/Flutter-3.x-2F8F4E?style=flat-square&logo=flutter&logoColor=white)](https://flutter.dev)
@@ -51,6 +51,7 @@ It takes the *idea* from the original app, never its design.
 |---|---|---|
 | **0 · Discovery** | App, platform, optional APK/IPA (with a safe "supply it yourself" guide), project, assets, **budget** (0 = free providers only; features and design stay the same) | `status.md` |
 | **1–2 · Research** | Store listing, review themes, 2–4 competitors, missing features, services & cost (free alternatives on a 0 budget) | `app-dossier.md` + do-not-copy list |
+| **2b · Engagement** | Reasons users return or leave, core loop, chosen mechanics (progress, rewards, discovery, optional streaks, notifications), ethics checklist, measurement plan — **you approve before any retention UI** | `engagement-retention.md` |
 | **3 · Direction** | Brand colour, palette check, type, shapes, icon & illustration style | `design-direction.md` |
 | **4 · Prototype** | 3 app-specific theme concepts → your pick → UI Kit → a small representative screen set in light **and** dark | Figma file |
 | **⛔ Gate 1** | You approve style, colours, type, layout, navigation, motion | — |
@@ -68,6 +69,7 @@ It takes the *idea* from the original app, never its design.
 |---|---|
 | `/remaster` | The whole workflow, with both approval gates |
 | `/remaster-research` | Discovery + research → `app-dossier.md` |
+| `/remaster-engagement` | Why users return or leave → core loop → the smallest set of ethical retention mechanics + measurement plan → `engagement-retention.md` |
 | `/remaster-sample` | 3 theme concepts → UI Kit → representative Figma screens (light & dark) → Gate 1 |
 | `/remaster-motion` | Key moments as Figma Motion timelines → `motion-system.md` |
 | `/remaster-build` | Flutter build 9a → 9d (only after Gate 2) |
@@ -151,7 +153,7 @@ Remaster routes to existing specialist skills instead of re-implementing them, a
 ```
 .claude-plugin/        plugin + marketplace manifests
 skills/remaster/       the orchestrator skill + references/ (phase guides)
-skills/remaster-*/     command skills (research, sample, motion, store-assets, build, audit, status, help)
+skills/remaster-*/     command skills (research, engagement, sample, motion, store-assets, build, audit, status, help)
 assets/                logo, hero and workflow artwork
 evals/                 test prompts with expected behaviour
 scripts/validate.py    structure + frontmatter + link checks (run in CI)

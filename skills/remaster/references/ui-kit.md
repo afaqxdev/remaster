@@ -9,7 +9,7 @@ No screen is designed or coded until a complete, original UI Kit exists and has 
 | Typography | families, sizes, weights, line heights, letter spacing; styles for display, heading, subtitle, body, label, caption, button |
 | Spacing & layout | spacing scale, screen padding, gaps, grid, safe areas, breakpoints (phone / tablet) |
 | Shape & elevation | radii, borders, shadows, surface hierarchy |
-| Components | buttons, icon buttons, cards, text fields, dropdowns, checkboxes, switches, chips, tabs, dialogs, bottom sheets, navigation bars, banners/toasts, list rows, progress/loading — only those the product needs, plus product-specific ones |
+| Components | buttons, icon buttons, cards, text fields, dropdowns, checkboxes, switches, chips, tabs, dialogs, bottom sheets, navigation bars, banners/toasts, list rows, progress/loading — only those the product needs, plus product-specific ones and the components the approved engagement mechanics need (`engagement-retention.md`: progress, reward, milestone, recap, recommendation, notification settings) |
 | States | default, hover (where applicable), focused, pressed, selected, disabled, loading, error, success — for every interactive component |
 | Icons & illustration | one icon family + custom key icons; illustration direction (see `visual-quality.md`) |
 | Motion | durations, easing/springs, transitions, reusable patterns (see `motion-research.md`) |
